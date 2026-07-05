@@ -165,6 +165,28 @@ export default function ConfirmationPage({ booking, onBookAnother }) {
         </div>
       </div>
 
+      <a
+      href={`https://wa.me/${config.ownerWhatsApp}?text=${encodeURIComponent(
+          `New Booking ${booking.bookingId}\nService: ${booking.service.name} (₹${booking.service.price})\nWhen: ${formatDateDisplay(booking.date)}, ${formatSlotDisplay(booking.time)}\nName: ${booking.name}\nPhone: +91 ${booking.phone}`
+        )}`}
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: 16,
+          minHeight: 48,
+          borderRadius: 50,
+          background: "#25D366",
+          color: "#0a0a0a",
+          fontWeight: 800,
+          fontSize: 14,
+          textDecoration: "none",
+        }}
+      >
+        ✅ Send booking to salon on WhatsApp
+      </a>
       <button
         onClick={downloadIcs}
         style={{
