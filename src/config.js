@@ -8,6 +8,7 @@ export default {
   tagline: "Grooming, done divinely.",
   location: "Gollahalli, Electronic City Phase I, Electronic City, Bengaluru, Hebbagodi, Karnataka 560100", // TODO: replace with exact address
   phone: "+91 7899470147", // TODO: replace with salon's real number
+  ownerWhatsApp: "917899470147",   // ← add this line
   instagram: "https://instagram.com/amit__kore",
   accent: "#f59e0b",
   accentSoft: "#fffbeb",
