@@ -43,7 +43,7 @@ export default function ConfirmationPage({ booking, onBookAnother }) {
   const [copied, setCopied] = useState(false);
   if (!booking) return null;
 
-  const shareText = `Just booked ${booking.service.name} at ${config.brand} via oye.nino. Zero investment mein apna booking site:`;
+  const shareText = `Just booked ${booking.service.name} at ${config.brand} via oye.nino. Zero investment mein apna booking site:"https://divine-looks1.prealpha012.workers.dev"`;
 
   const downloadIcs = () => {
     const blob = new Blob([buildIcs(booking)], { type: "text/calendar" });
